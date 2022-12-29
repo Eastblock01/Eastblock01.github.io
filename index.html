@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+    <script
+src="https://kit.fontawesome.com/abc5642aaf.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    
+</head>
+<script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
+<style>
+     * {
+ 
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+    height:100px;
+    margin-top:auto;
+    background-color:black;
+}
+.p-tag{
+font-size:50px;
+     font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+margin-left:45%;
+    color:#fff;
+}
+
+    .img{
+    margin-left:-1%;
+    width:101.3%;
+    height:1100px;
+    background-repeat:no-repeat;
+    background-size:cover;
+        background-image:url("card.jpg")
+    }
+    .top{
+    margin-left:-1%;
+        background-color:#000;
+        width:101.3%;
+        height:80px;
+    }
+    .links {
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        display:block;
+    }
+    ul{
+        display: inline-block;
+    }
+    ul li{
+        list-style-type:none;
+    }
+    ul li a{
+    background-color:#000;
+    color:#fff;
+    font-size:30px;
+    text-align:right;
+    margin-top:4%;
+        text-decoration:none;
+        color:#fff;
+    }
+    .flip{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+    font-size:80px;
+        color:#fff;
+    }
+    .writings{
+    margin-top:-40%;
+    position:absolute;
+        margin-left:2%;
+    }
+    
+    .about{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+    height:1500px;
+    background-color:#000;
+        margin-top:60%;
+        margin-left:-1%;
+        width:101.3%;
+        
+    }
+    
+    .about p{
+    position: absolute;
+    margin-top:10%;
+    margin-left:10%;
+    color:#fff;
+    font-size:70px;
+    width:80%;
+    }
+    .tag2{
+   font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+    font-weight:bold;
+    font-size:90px;
+    position:absolute;
+    margin-left:9%;
+        color:#ffff;
+    }
+    
+    .move a{
+    margin-left:-10%;
+    cursor:pointer;
+    padding:25px 20px;
+    color:#fff;
+    font-size:60px;
+    text-decoration:none;
+    position: absolute;
+    margin-top:35%;
+    border-radius:21px;
+    font-weight:bold;
+        background-color:red;
+    }
+    .container{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+    margin-top:10%;
+    border-radius:30px;
+    border:1px solid #FAF9F6;    
+    margin-left:3%;
+    width:850px;
+    height:1000px;
+        background-color:#FAF9F6;
+    }
+    .container2{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        margin-top:-41%;
+    border-radius:30px;
+    border:1px solid #FAF9F6 ;
+    margin-left:56%;
+    width:850px;
+    height:1000px;
+        background-color:#FAF9F6;
+    }
+    .container2 img{
+         position: absolute;
+    margin-left:8%;
+    margin-top:12%;
+        width:400px;
+    }
+    .container2 p{
+        width:80%;
+    margin-left:10%;
+   margin-top:90%;
+        font-weight:bold;
+        font-size:40px;
+    }
+    .container img{
+    position: absolute;
+    margin-left:8%;
+    margin-top:12%;
+        width:400px;
+    }
+    .container p{
+    width:80%;
+    margin-left:7%;
+   margin-top:90%;
+        font-weight:bold;
+        font-size:40px;
+    }
+    .container3{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        margin-top:10%;
+    border-radius:30px;
+    border:1px solid #FAF9F6;
+    margin-left:30%;
+    width:850px;
+    height:1000px;
+        background-color:#FAF9F6;
+    }
+   .container3 img{
+        position: absolute;
+    margin-left:8%;
+    margin-top:12%;
+        width:400px;
+   }
+   .container3 p{
+       width:80%;
+    margin-left:7%;
+   margin-top:90%;
+        font-weight:bold;
+        font-size:40px;
+   }
+    .reason{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+    font-size:80px;
+        margin-left:15%;
+    }
+    .friendly{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    margin-top:4%;
+    font-weight:bold;
+    font-size:60px;
+        margin-left:6%;
+    }
+    .nav{
+        display:none;
+    }
+    .fa-bars{
+        display:none;
+    }
+    
+    .product{
+    margin-top:10%;
+        background-color:#000;
+        margin-left:-1%;
+        width:101.3%;
+        height:1500px;
+    }
+    .product img{
+          
+        width:400px;
+    }
+   .product p{
+   font-size:50px;
+   font-weight:bold;
+       color:#fff;
+   }
+   .product h1{
+   margin-left:40%;
+   font-size:50px;
+       color:#fff;
+   }
+   .buy{
+   margin-left:-20%;
+   cursor:pointer;
+   border-radius:5px;
+   font-size:50px;
+       color:#000;
+       background-color:gold;
+       padding:20px 70px;
+       text-decoration:none;
+   }
+   .sell{
+   border-radius:5px;
+   font-size:50px;
+   margin-left:5%;
+   margin-top:-0.95%;
+   color:#000;
+   padding:20px 30px;
+   cursor:pointer;
+   background-color:gold;
+   text-decoration:none;
+       position:absolute;
+   }
+   .stats{
+   width:1500px;
+       margin-top:30%;
+   }
+   .comment{
+   margin-left:6%;
+       margin-top:20%;
+   }
+   .comment img{
+   border-radius:300px;
+       width:500px;
+   }
+   .comment p{
+       font-weight:bold;
+       font-size:40px;
+   }
+
+footer{
+width:101.3%;
+margin-left:-1%;
+height:300px;
+    background-color:#000;
+}
+.res{
+
+position: absolute;
+margin-left:40%;
+margin-top:5%;
+    color:#fff;
+    font-size:40px;
+}
+.dummy{
+position: absolute;
+    background-color:#000;
+    width:103.8%;
+    margin-left:-3.15%;
+    margin-top:10%;
+    height:100px;
+}
+
+
+    @media screen and (max-width:600px){
+
+
+.p-tag{
+margin-left:28%;
+font-size:15px;
+    color:#fff;
+}
+    .nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: .9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+.nav a {
+	display: block;
+	padding: 20px 30px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #ccc;
+}
+.nav a:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+.nav .close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	margin-left: 50px;
+	font-size: 30px
+}
+.slide a {
+	color: #000;
+	font-size: 36px;
+}
+#content {
+	padding: 20px;
+	transition: margin-left 0.7s;
+	overflow: hidden;
+	width: 100%;
+ }
+ .fa-bars{
+ margin-top:-2%;
+ color:#fff;
+ display:block;
+     position: absolute;
+ }
+
+        .links{
+            display:none;
+        }
+        .nav{
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+            display:block;
+        }
+        .top{
+        margin-left:-2.5%;
+        width:115.2%;
+            margin-top:-14%;
+        }
+        footer{
+             font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        margin-top:10%;
+        height:100px;
+            margin-left:-2.5%;
+            width:115.2%;
+        }
+        
+        .writings{
+        margin-left:1%;
+        position: absolute;
+        margin-top:16%;
+            display:block;
+        }
+        .flip{
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+            font-size:30px;
+        }
+        .reason{
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        font-size:15px;
+        margin-left:16%;
+            display:block;
+        }
+        .about p{
+        margin-top:50%;
+        width:80%;
+            font-size:15px;
+        }
+        .about a{
+        padding:10px 10px;
+        margin-left:35%;
+        border-radius:10px;
+        margin-top:99%;
+        font-size:20px;
+            display:block;
+        }
+        .tag2{
+            font-size:40px;
+        }
+        .about{
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        height:500px;
+        margin-left:-2.5%;
+        width:115.3%;
+            display:block;
+        }
+        .friendly{
+        margin-left:20%;
+        font-size:15px
+        }
+        .container{
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        margin-left:13%;
+        width:300px;
+        height:300px;
+            display:block;
+        }
+        .container p{
+        margin-left:4%;
+        margin-top:65%;
+            font-size:15px;
+            width:95%;
+        }
+        .container img{
+      
+        margin-top:15%;
+        margin-left:20%;
+        position: absolute;
+            width:120px;
+        }
+        .container2{
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        margin-top:10%;
+        margin-left:13%;
+        width:300px;
+        height:300px;
+            display:block;
+            
+        }
+        .container2 img{
+            margin-top:15%;
+        margin-left:20%;
+        position: absolute;
+            width:120px;
+        }
+        .container2 p{
+        margin-left:4%;
+            margin-top:65%;
+            font-size:15px;
+            width:90%;
+        }
+        .container3{
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        margin-top:10%;
+            margin-left:13%;
+        width:300px;
+        height:300px;
+            display:block;
+        }
+        .container3 img{
+            margin-top:15%;
+        margin-left:20%;
+        position: absolute;
+            width:120px;
+        }
+        .container3 p{
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        margin-left:4%;
+            margin-top:65%;
+            font-size:15px;
+            width:90%;
+        }
+        .img{
+        background-size:cover;
+        background-repeat:no-repeat;
+        width:117%;
+        margin-left:-4.30%;
+        height:450px;
+            display:block;
+        }
+        .product{
+        margin-top:10%;
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+        margin-left:-2.5%;
+        width:115.3%;
+            background-color:#000;
+            height:700px;
+        }
+        .product h1{
+        font-size:20px;
+        margin-left:27%;
+            color:#fff;
+        }
+        .product p{
+        color:#000;
+        font-size:15px;
+        margin-top:3%;
+        font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+            font-weight:bold;
+        }
+        .product img{
+        
+            width:100px;
+        }
+        .pclass{
+        
+        border:2px solid gray;
+        border-radius:30px;
+        width:300px;
+        height:400px;
+            background-color:#fff;
+        }
+     
+        .buy{
+        font-size:15px;
+            background-color:gold;
+            color:black;
+            position:absolute;
+            border-radius:30px;
+            margin-left:-32%;
+            text-decoration:none;
+            padding:10px 35px;
+        }
+      .sell{
+      font-size:15px;
+      border-radius:30px;
+      position:absolute;
+      margin-top:0.75%;
+          background-color:gold;
+          color:black;
+          margin-left:-3%;
+          text-decoration:none;
+          padding:10px 20px;
+      }
+      .stats{
+          width:400px;
+      }
+      .comment{
+          margin-top:20%;
+      }
+      .comment img{
+          width:200px;
+          border-radius:300px;
+      }
+      .comment p{
+          font-size:15px;
+      }
+    }
+    
+    @media screen and (max-width:900px) and (min-width:768px){
+    .img{
+    margin-left:-8%;
+     width:129%;
+    }
+    .top{
+        width:122%;
+    }
+    footer{
+    height:200px;
+        width:122%;
+    }
+    .p-tag{
+    margin-left:22%;
+        font-size:30px;
+    }
+    
+    .comment{
+        display:block;
+    }
+    .comment img{
+        width:400px;
+    }
+    .about{
+    width:122%;
+        display:block;
+    }
+   
+    
+    .about p{
+    width:100%;
+    margin-top:40%;
+        font-size:50px;
+    }
+    .about h1{
+        
+    }
+    .about a{
+    margin-left:6%;
+    margin-top:130%;
+        font-size:30px;
+    }
+        .stats{
+        margin-left:3%;
+        position:relative;
+        width:800px;
+            display:block;
+        }
+        .flip{
+        font-size:60px;
+            display:block;
+        }
+        
+        .container{
+        margin-left:18%;
+        width:600px;
+        height:800px;
+            display:block;
+        }
+        .container h1{
+        margin-left:15%;
+            text-align: center;
+            font-size:50px;
+        }
+        .container img{
+        
+        margin-top:20%;
+        margin-left:18%;
+            width:300px;
+        }
+        .container p{
+            font-size:40px;
+            width:90%;
+        }
+        .container2{
+        margin-left:18%;
+        margin-top:10%;
+            width:600px;
+        height:800px;
+            display:block;
+        }
+        .container2 h1{
+            margin-left:15%;
+            text-align: center;
+            font-size:50px;
+        }
+        .container2 img{
+            margin-top:20%;
+        margin-left:18%;
+            width:300px;
+        }
+        .container2 p{
+            font-size:40px;
+            width:90%;
+        }
+        .container3{
+        margin-left:18%;
+            width:600px;
+        height:800px;
+            display:block;
+        }
+        .container3 h1{
+            margin-left:15%;
+            text-align: center;
+            font-size:50px;
+        }
+        .container3 img{
+            margin-top:20%;
+        margin-left:18%;
+            width:300px;
+        }
+        .comtainer3 p{
+            font-size:40px;
+            width:90%;
+        }
+        .writings{
+        margin-top:-140%;
+            display: block;
+        }
+        .reason{
+            font-size:39px;
+            width:100%;
+        }
+        .product{
+            width:122%;
+        }
+        .product h1{
+            margin-left:20%;
+        }
+        .pclass img{
+            width:300px;
+        }
+        .pclass p{
+            font-size:30px;
+        }
+        .pclass a{
+            font-size:30px;
+        }
+        .buy{
+        margin-top:-1%;
+        padding:40px 70px;
+            position: absolute;
+            margin-left:-34%;
+        }
+        .sell{
+        width:25%;
+            position: absolute;
+            margin-left:7%;
+        }
+      
+    }
+    
+    @media screen and (max-width:1440px) and (min-width:1024px){
+        .img{
+            width:140%;    
+        }
+        .top{
+            width:140%;
+        }
+        .p-tag{
+             font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+            margin-left:30%;
+        }
+         footer{
+         height:300px;
+        width:140%;
+             font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+        .stats{
+        margin-left:30%;
+            width:1000px;
+        }
+        .writings{
+        margin-top:-90%;
+        position:absolute;
+            
+        }
+        .reason{
+        margin-left:33%;
+            font-size:42px;
+        }
+        .container{
+            width:900px;
+            height:900px;
+            margin-left:30%;
+        }
+        .container p{
+            margin-top:78%;
+        }
+        .container img{
+        margin-top:26%;
+            margin-left:22%;
+        }
+        .container h1{
+            margin-top:7%;
+            margin-left:18%;
+        }
+        .container2{
+        width:900px;
+        height:900px;
+        margin-top:10%;
+        margin-left:30%;
+            display:block;
+        }
+         .container2 p{
+            margin-top:78%;
+        }
+        .container2 img{
+        margin-top:26%;
+            margin-left:22%;
+        }
+        .container2 h1{
+            margin-top:7%;
+            margin-left:18%;
+        }
+        .container3{
+            width:900px;
+        height:900px;
+        margin-top:10%;
+        margin-left:30%;
+            display:block;
+        }
+         .container3 p{
+            margin-top:78%;
+        }
+        .container3 img{
+        margin-top:26%;
+            margin-left:22%;
+        }
+        .container3 h1{
+            margin-top:7%;
+            margin-left:18%;
+        }
+         .product{
+            width:140%;
+        }
+        .product p{
+        
+            font-size:30px;
+        }
+        .product h1{
+            margin-left:35%;
+        }
+        .product img{
+            width:300px;
+        }
+      .buy{
+      cursor:pointer;
+      margin-top:-0.95%;
+      font-size:30px;
+      margin-left:-22%;
+          position:absolute;
+      }
+      .sell{
+      cursor:pointer;
+      margin-left:-2%;
+      font-size:30px;
+          position:absolute;
+      }
+        .product{
+            font-size:10px;
+        }
+        .about{
+            width:140%;
+            
+        }
+        .about h1{
+            
+        }
+        .about p{
+        width:90%;
+        margin-left:19%;
+        font-size:50px;
+            margin-top:20%;
+        }
+        .about a{
+            margin-top:90%;
+            font-size:50px;
+        }
+        .comment{
+            margin-left:35%;
+        }
+        
+    }
+</style>
+<body>
+    <script>
+<!-- code by https://www.html-code-generator.com -->
+document.write(unescape('%3Csection%20class%3D%22moblie%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22content%22%3E%0A%0A%20%20%20%20%3Cspan%20class%3D%22slide%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20onclick%3D%22openSlideMenu%28%29%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fas%20fa-bars%22%3E%3C/i%3E%0A%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%3C/span%3E%0A%0A%20%20%20%20%3Cdiv%20id%3D%22menu%22%20class%3D%22nav%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20class%3D%22close%22%20onclick%3D%22closeSlideMenu%28%29%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fas%20fa-times%22%3E%3C/i%3E%0A%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22cover.html%22%3EHOME%3C/a%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ca%20href%3D%22%23abt%22%3EABOUT%20US%3C/a%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22online.html%22%3ETEMPLATE%3C/a%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22not.html%22%3ELANDING%20PAGE%3C/a%3E%0A%20%20%20%20%3C/div%3E%0A%0A%20%20%0A%20%20%3C/div%3E%0A%20%20%20%20%3C/section%3E%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%3C%21--%20mobile%20barrr%20--%3E%0A%3Csection%20id%3D%22top%22%20class%3D%22top%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22links%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%3E%3Cli%3E%3Ca%20href%3D%22%22%3EHOME%3C/a%3E%3C/li%3E%3C/ul%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cul%3E%3Cli%3E%3Ca%20href%3D%22%23abt%22%3EABOUT%20US%3C/a%3E%3C/li%3E%3C/ul%3E%0A%20%20%20%20%20%20%20%20%3Cul%3E%3Cli%3E%3Ca%20href%3D%22online.html%22%3ETEMPLATES%3C/a%3E%3C/li%3E%3C/ul%3E%0A%20%20%20%20%20%20%20%20%3Cul%3E%3Cli%3E%3Ca%20href%3D%22not.html%22%3ELANDING%20PAGES%3C/a%3E%3C/li%3E%3C/ul%3E%0A%20%20%20%20%3C/div%3E%0A%3C/section%3E%0A%0A%3Csection%20class%3D%22img%22%3E%0A%20%20%20%20%20%20%20%0A%20%20%20%20%3C/section%3E%0A%20%20%20%20%0A%3Csection%20class%3D%22writings%22%3E%0A%20%20%20%20%3Ch1%20class%3D%22flip%22%3ETHE%20%3Cb%20style%3D%22color%3Ared%3B%22%3EEASTBLOCK%20%3Cbr%3E%20FLIPPING%3C/b%3E%20WEBSITE%3C/h1%3E%0A%3C/section%3E%0A%0A%0A%0A%3Csection%3E%0A%20%20%20%20%3Ch1%20class%3D%22reason%22%3EREASONS%20WHY%20YOU%20SHOULD%20GO%20WITH%20US%3F%3C/h1%3E%0A%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22friendly%22%3EPOCKET%20FRIENDLY%3C/h1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22money.png%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EOur%20products%20are%20very%20affordable%20and%20pocket%20friendly%20get%20a%20landing%20page%20and%20a%20website%20for%20a%20very%20cheap%20rate%2C%20customer%20satisfaction%20is%20peak.%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C%21--%20container2%20--%3E%0A%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22container2%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22friendly%22%3EFAST%20%20%26%20%20%20%20%20%20%20%20%20%20%0A%20%20RELIABLE%3C/h1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22deadline.png%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EWe%20are%20100%25%20fast%20and%20very%20reliable%20when%20it%20comes%20to%20answering%20questions%20and%20selling%20templates%20we%20move%20with%20the%20speed%20of%20light.%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C%21--%20container%203%20--%3E%0A%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22container3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22friendly%22%3EAFFLIATE%20PROGRAM%3C/h1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22affliation.png%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EIf%20you%27re%20not%20interested%20in%20buying%20a%20template%20why%20not%20earn%20with%20our%20website%20as%20an%20affliate%2C%20sell%20a%20product%20and%20get%20a%20commission.%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%3C/section%3E%0A%0A%3Csection%20class%3D%22product%22%3E%0A%20%20%20%20%3Ch1%20class%3D%22available%22%3EAVAILABLE%20PRODUCTS%3C/h1%3E%0A%20%20%20%20%20%20%3Ccenter%3E%0A%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22pclass%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EE-commerce%20website%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3ELanguages%20used%20%3A%20%3Cstrong%3EHTML%20%26%20CSS%3C/strong%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22product.jpg%22%3E%3Cimg%20src%3D%22product.jpg%22%20alt%3D%22%22%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22price%22%3EPrice%20%3Cstrong%3E%3A%2035%2C000%20naira%3C/strong%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22buy%22%20href%3D%22https%3A//wa.link/b2dwzr%22%3EBuy%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22sell%22%20href%3D%22form.html%22%3ESell%20This%20Product%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%3C/center%3E%0A%3C/section%3E%0A%3Ccenter%3E%0A%20%20%20%20%3Cimg%20class%3D%22stats%22%20src%3D%22stats.jpg%22%20alt%3D%22%22%3E%0A%3C/center%3E%0A%3Csection%20id%3D%22abt%22%20class%3D%22about%22%3E%0A%20%20%20%3Ch1%20class%3D%22tag2%22%3EAbout%20Us%3C/h1%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22p2%22%3EThe%20Eastblock%20Specializes%20In%20Selling%20Already%20Made%20Landing%20Pages.%20What%20Is%20A%20Landing%20Page%3F%20Well%20A%20Landing%20Page%20Is%20A%20%20Standalone%20Web%20Page%20That%20Contains%20Information%20About%20A%20certain%20Company%20And%20Also%20Goods%20That%20Company%20Has%20To%20Sell.%20You%20Pick%20The%20Landing%20Page%20Of%20Your%20Choice%20We%20Modify%20It%20To%20Your%20Taste%20..%20Great%20Now%20That%20We%20Are%20Done%20Go%20Search%20For%20The%20Landing%20Page%20Of%20Your%20Choice.%3C/p%3E%0A%20%20%20%20%20%20%20%20%3Ccenter%20class%3D%22move%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23top%22%3E%20Continue%20search%3C/a%3E%0A%20%20%20%20%20%20%20%20%3C/center%3E%0A%3C/section%3E%0A%0A%3Csection%20class%3D%22comment%22%3E%0A%20%20%20%20%3Ccenter%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EMario%20kasas%3A%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22face2.jpg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EGreat%20Template%20%2C%20wow%20love%20it.%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EMaro%20culture%3A%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22face2.jpg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EThe%20affliate%20program%20is%20my%20source%20of%20income%20thank%20you%21%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EAbisha%20Mudia%3A%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22face2.jpg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EGreat%20Work%20i%20must%20say%20Eastblock%20ng%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EUnknown%3A%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22face2.jpg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EYou%20guys%20need%20to%20work%20on%20more%20templates%20smh%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EAkp..Ruona%3A%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22face2.jpg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3Ei%20have%20seen%20better...%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3ESamuel%20Neo%3A%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22face2.jpg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E25%20thousand%20naira%20through%20AFFLIATE%20PROGRAM%21%20thank%20you%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/center%3E%0A%3C/section%3E%0A%0A%3Cfooter%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22p-tag%22%3EAll%20Rights%20Reserved%20%A9%202022%3C/p%3E%0A%20%20%20%20%3C/footer%3E%0A'))
+</script>
+
+</body>
+</html>
