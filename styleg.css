@@ -3,7 +3,7 @@ body {
   padding: 20px;
   background-repeat: y-repeat;
   background-size:cover;
-  background-image:url("gym.png");
+  background-color:#fff;
 }
 
 .holder{
